@@ -3,7 +3,7 @@ function createDiscountMutation(discountValue) {
     mutation {
         discountCodeBasicCreate(basicCodeDiscount: {
            usageLimit: 1,
-          title: "${Date.now().toString().toUpperCase()}discount",
+          title: "${(Date.now() + "discount").toUpperCase()}",
           startsAt: "2019-01-01",
           customerSelection: {
             all: true
